@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
       table.integer('rating');
 
       table.timestamps(true, true);
-    })
+    }
   ])
 }
 

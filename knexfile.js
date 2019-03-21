@@ -1,14 +1,13 @@
 // Update with your config settings.
 
 module.exports = {
-
   development: {
     client: 'pg',
     connection: 'postgres://localhost/play_backend',
+    useNullAsDefault: true,
     migrations: {
       directory: './db/migrations'
-  },
-    useNullAsDefault: true
+    }
   },
 
   staging: {
@@ -42,5 +41,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
-
 };
